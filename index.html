@@ -174,7 +174,7 @@ const thankModal = document.getElementById("thank-modal");
 const introBox = document.getElementById("intro-box");
 let firstMessageSent = false;
 
-// Enviar mensagem
+ // Enviar mensagem
 sendBtn.addEventListener("click", sendMessage);
 input.addEventListener("keypress", e=>{ if(e.key==="Enter") sendMessage(); });
 
@@ -185,7 +185,7 @@ async function sendMessage(){
   if(!firstMessageSent){
     introBox.classList.add("hide");
     firstMessageSent = true;
-  }
+ 
 
   const userDiv = addMessage(msg,"user");
   input.value="";
